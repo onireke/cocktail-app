@@ -1,0 +1,99 @@
+.nav {
+  background-color: azure;
+  box-shadow: 2px 6px 2px 0px rgba(163, 163, 163, 0.75);
+  -webkit-box-shadow: 2px 6px 2px 0px rgba(163, 163, 163, 0.75);
+  -moz-box-shadow: 2px 6px 2px 0px rgba(163, 163, 163, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40rem;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  column-gap: 3rem;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.logo {
+  width: 8rem;
+  height: 4rem;
+}
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-title {
+  margin: 4rem auto;
+  font-size: 2.3rem;
+}
+
+.about-message {
+  margin: auto;
+  width: 50%;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  color: grey;
+}
+
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.home-button {
+  background-color: green;
+  color: white;
+  height: 2rem;
+  border-radius: 5px;
+  width: 10rem;
+  font-size: 1rem;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search {
+  margin-top: 8rem;
+  background-color: white;
+  width: 40rem;
+  height: 8rem;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 0px rgba(102, 102, 102, 0.75);
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(102, 102, 102, 0.75);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(102, 102, 102, 0.75);
+}
+
+.search-request {
+  color: #476a2e;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.request-box {
+  margin: 2rem;
+}
+.home-input {
+  width: 35rem;
+  height: 2rem;
+  border: 2px solid blue;
+  border-radius: 5px;
+}
