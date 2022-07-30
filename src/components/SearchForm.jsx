@@ -1,16 +1,34 @@
 import React from "react";
-import { useGlobalContext } from "./Context";
+// import { useGlobalContext } from "./Context";
 
 function SearchForm() {
-  const { setSearchFliter } = useGlobalContext();
+  // const { setSearchFilter } = useGlobalContext();
+  const searchValue = React.useRef("");
+
+  React.useEffect(() => {
+    searchValue.current.focus();
+  }, []);
+
+  // const handleChange = () => {
+  //   setSearchFilter(searchValue.current.value);
+  // };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <main>
-      <div className="search">
+      <form className="search" onSubmit={handleSubmit}>
         <div className="request-box">
-          <p className="search-request">Search Your Favourite Food</p>
-          <input type="text" className="home-input" />
+          <label className="search-request">Search Your Favourite Food</label>
+          <input
+            type="text"
+            className="home-input"
+            ref={searchValue}
+            // onChange={handleChange}
+          />
         </div>
-      </div>
+      </form>
     </main>
   );
 }

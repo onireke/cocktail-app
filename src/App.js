@@ -1,6 +1,6 @@
 import "./App.css";
 import About from "./components/About";
-import Contact from "./components/Contact";
+// import Contact from "./components/Contact";
 import Error from "./components/Error";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        {/* <Route path="/contact" element={<Contact />} /> */}
         <Route path="*" element={<Error />} />
       </Routes>
     </div>

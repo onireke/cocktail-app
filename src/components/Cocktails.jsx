@@ -1,10 +1,9 @@
 import React from "react";
-import { useGlobalContext } from "./Context";
+import { useGlobalContext } from "./context";
 import Loading from "./Loading";
 import Cocktail from "./Cocktail";
 function Cocktails() {
   const { cocktails, loading } = useGlobalContext();
-  console.log(cocktails);
   if (loading) {
     return <Loading />;
   }
