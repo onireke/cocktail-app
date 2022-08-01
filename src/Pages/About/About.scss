@@ -1,0 +1,17 @@
+.about-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-title {
+  margin: 4rem auto;
+  font-size: 2.3rem;
+}
+
+.about-message {
+  margin: auto;
+  width: 50%;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  color: grey;
+}

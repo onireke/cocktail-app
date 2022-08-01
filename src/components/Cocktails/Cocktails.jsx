@@ -1,7 +1,8 @@
 import React from "react";
 import { useGlobalContext } from "../../context";
 import Loading from "../Loading";
-import Cocktail from "../Cocktail/Cocktail";
+import Cocktail from "../Coctail/Cocktail";
+import "./Cocktails.scss";
 function Cocktails() {
   const { cocktails, loading } = useGlobalContext();
   console.log(cocktails);
@@ -17,8 +18,8 @@ function Cocktails() {
   console.log(loading, "loading");
 
   return (
-    <main>
-      <h2>Cocktails </h2>
+    <main className="coctails-page">
+      <h2 className="cocktails-heading">Drink Menu </h2>
       {loading ? (
         <img src="meme.gif" alt="meme" />
       ) : (

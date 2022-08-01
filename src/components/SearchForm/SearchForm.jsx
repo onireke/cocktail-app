@@ -1,5 +1,6 @@
 import React from "react";
 import { useGlobalContext } from "../../context";
+import "./SearchForm.scss";
 
 function SearchForm() {
   const { setSearchFilter } = useGlobalContext();

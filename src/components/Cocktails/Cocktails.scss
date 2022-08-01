@@ -1,0 +1,15 @@
+.main-cocktails {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.cocktails-heading {
+  color: green;
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 2rem;
+}
+
+.cocktails-page {
+}

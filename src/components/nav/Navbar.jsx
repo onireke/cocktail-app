@@ -11,12 +11,12 @@ function Navbar() {
           <img src={logo} alt="logo" className="logo" />
         </Link>
         <ul className="navbar-links">
-          <Link to="/">
+          <Link to="/" className="home-link">
             <li>Home</li>
           </Link>
 
-          <Link to="/about">
-            <li className="nav-about">About page</li>
+          <Link to="/about" className="about-link">
+            <li className="nav-about">About</li>
           </Link>
         </ul>
       </div>

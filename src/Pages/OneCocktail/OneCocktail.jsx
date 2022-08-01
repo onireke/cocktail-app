@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import Loading from "../../components/Loading";
 import { useParams, Link, useSearchParams } from "react-router-dom";
+import "./OneCocktail.scss";
 
 function OneCocktail() {
   const { id } = useParams();

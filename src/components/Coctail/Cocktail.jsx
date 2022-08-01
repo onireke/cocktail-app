@@ -1,12 +1,13 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import React from "react";
+import "./Cocktail.scss";
 
 function Cocktail({ image, name, id, info, glass }) {
   const navigate = useNavigate();
   return (
     <main>
       <div className="image-container">
-        <img src={image} alt={name} />
+        <img src={image} alt={name} className="cocktail-image" />
       </div>
       <div className="coctail-base">
         <h2>{name}</h2>
