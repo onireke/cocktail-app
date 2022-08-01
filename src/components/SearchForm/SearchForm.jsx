@@ -4,7 +4,7 @@ import "./SearchForm.scss";
 
 function SearchForm() {
   const { setSearchFilter } = useGlobalContext();
-  const searchValue = React.useRef("");
+  const searchValue = React.useRef(null);
 
   React.useEffect(() => {
     searchValue.current.focus();
@@ -12,21 +12,21 @@ function SearchForm() {
 
   const handleChange = () => {
     setSearchFilter(searchValue.current.value);
+    console.log(searchValue.current.value);
   };
-
   const handleSubmit = (e) => {
     e.preventDefault();
   };
   return (
-    <main>
+    <main className="search-page">
       <form className="search" onSubmit={handleSubmit}>
         <div className="request-box">
-          <label className="search-request">
+          <span className="search-request">
             Search Your Favourite Drink Here
-          </label>
+          </span>
           <input
             type="text"
-            className="home-input"
+            className="home-input1"
             ref={searchValue}
             onChange={handleChange}
           />

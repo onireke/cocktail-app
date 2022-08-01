@@ -13,14 +13,17 @@
   color: #476a2e;
   font-size: 1rem;
   font-weight: bold;
+  margin-top: 2rem;
+  // display: block;
 }
 
-.request-box {
-  margin: 2rem;
-}
-.home-input {
+.home-input1 {
   width: 35rem;
   height: 2rem;
-  border: 2px solid blue;
+  border: 2px solid green;
   border-radius: 5px;
+  margin: 2rem;
+}
+.home-input1:focus {
+  border-color: green;
 }
