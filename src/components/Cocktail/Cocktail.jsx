@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import React from "react";
 
 function Cocktail({ image, name, id, info, glass }) {
+  const navigate = useNavigate();
   return (
     <main>
       <div className="image-container">
@@ -10,10 +11,13 @@ function Cocktail({ image, name, id, info, glass }) {
       <div className="coctail-base">
         <h2>{name}</h2>
         <h3>{glass}</h3>
-        <h4>{info}</h4>
-        <Link to={"/cocktail/${id}"} className="single-link">
-          <button className="details">Details</button>
-        </Link>
+        <p>{info}</p>
+        <button
+          className="details"
+          onClick={() => navigate(`Cocktail?id=${id}`)}
+        >
+          Details
+        </button>
       </div>
     </main>
   );

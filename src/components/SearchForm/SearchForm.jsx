@@ -1,17 +1,17 @@
 import React from "react";
-// import { useGlobalContext } from "./Context";
+import { useGlobalContext } from "../../context";
 
 function SearchForm() {
-  // const { setSearchFilter } = useGlobalContext();
+  const { setSearchFilter } = useGlobalContext();
   const searchValue = React.useRef("");
 
   React.useEffect(() => {
     searchValue.current.focus();
   }, []);
 
-  // const handleChange = () => {
-  //   setSearchFilter(searchValue.current.value);
-  // };
+  const handleChange = () => {
+    setSearchFilter(searchValue.current.value);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -25,7 +25,7 @@ function SearchForm() {
             type="text"
             className="home-input"
             ref={searchValue}
-            // onChange={handleChange}
+            onChange={handleChange}
           />
         </div>
       </form>

@@ -1,11 +1,12 @@
 import "./App.css";
-import About from "./components/About";
+import About from "./Pages/About/About";
 // import Contact from "./components/Contact";
-import Error from "./components/Error";
-import Home from "./components/Home";
-import Navbar from "./components/Navbar";
+import Error from "./Pages/Error/Error";
+import Home from "./Pages/Home/Home";
+import Navbar from "./components/Navbar/Navbar";
 import { Routes, Route } from "react-router-dom";
 import React from "react";
+import OneCocktail from "./Pages/OneCocktail/OneCocktail";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
+        <Route path="/Cocktail" element={<OneCocktail />} />
+
         {/* <Route path="/contact" element={<Contact />} /> */}
         <Route path="*" element={<Error />} />
       </Routes>

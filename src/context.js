@@ -1,12 +1,11 @@
 import { useContext, useState, useEffect } from "react";
 import React from "react";
 
-const url = `www.thecocktaildb.com/api/json/v1/1/search.php?s=`;
+const url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
 
-const AppContext = React.createContext;
-
+const AppContext = React.createContext();
 function AppProvider({ children }) {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [searchFilter, setSearchFilter] = useState("A");
   const [cocktails, setCocktails] = useState([]);
 
@@ -22,9 +21,8 @@ function AppProvider({ children }) {
         if (drinks) {
           const newDrinks = drinks.map((item) => {
             const { idDrink, strDrink, strDrinkThumb, strAlcoholic, strGlass } =
-              {
-                item,
-              };
+              item;
+
             return {
               id: idDrink,
               name: strDrink,
@@ -50,6 +48,7 @@ function AppProvider({ children }) {
       value={{
         loading,
         setSearchFilter,
+        searchFilter,
         cocktails,
       }}
     >
