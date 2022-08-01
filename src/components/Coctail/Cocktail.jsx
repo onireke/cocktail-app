@@ -5,19 +5,19 @@ import "./Cocktail.scss";
 function Cocktail({ image, name, id, info, glass }) {
   const navigate = useNavigate();
   return (
-    <main>
+    <main className="cocktail-appear">
       <div className="image-container">
         <img src={image} alt={name} className="cocktail-image" />
       </div>
-      <div className="coctail-base">
+      <div className="cocktail-base">
         <h2>{name}</h2>
         <h3>{glass}</h3>
         <p>{info}</p>
         <button
           className="details"
-          onClick={() => navigate(`Cocktail?id=${id}`)}
+          onClick={() => navigate(`/Cocktail?id=${id}`)}
         >
-          Details
+          DETAILS
         </button>
       </div>
     </main>

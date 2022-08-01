@@ -1,0 +1,41 @@
+.drink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.drink img {
+  width: 23rem;
+  height: 23rem;
+  border-radius: 8px;
+  margin-top: 3rem;
+}
+
+.drink-data {
+  background-color: yellowgreen;
+  font-size: 1.2rem;
+  border-radius: 2px;
+}
+
+.drink-name {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.one-cocktail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.home {
+  background-color: #476a2e;
+  height: 2.5rem;
+  width: 10rem;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.3rem;
+}

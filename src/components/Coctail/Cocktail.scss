@@ -1,13 +1,26 @@
+.cocktail-appear {
+  box-shadow: 3px 5px 5px 0px rgba(222, 214, 214, 0.75);
+  -webkit-box-shadow: 3px 5px 5px 0px rgba(222, 214, 214, 0.75);
+  -moz-box-shadow: 3px 5px 5px 0px rgba(222, 214, 214, 0.75);
+}
+
 .cocktail-image {
-  width: 25rem;
-  height: 25rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 8px;
 }
 .details {
-  background-color: greenyellow;
+  background-color: green;
   width: 5rem;
   height: 2rem;
   border-radius: 5px;
   border: none;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  text-decoration: solid;
+  color: white;
+}
+
+.cocktail-base {
+  margin-left: 2rem;
 }

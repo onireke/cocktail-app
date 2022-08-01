@@ -26,10 +26,19 @@
 }
 
 .logo {
-  width: 8rem;
+  width: 3rem;
   height: 4rem;
 }
 .about-link,
 .home-link {
   text-decoration: none;
+  color: green;
+}
+
+.home-link:hover {
+  text-decoration: underline;
+}
+
+.about-link:hover {
+  text-decoration: underline;
 }

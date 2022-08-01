@@ -25,7 +25,7 @@ function Cocktails() {
       ) : (
         <div className="main-cocktails">
           {cocktails.map((item) => {
-            return <Cocktail key={item.id} {...item} />;
+            return <Cocktail key={item.id} id={item.idDrink} {...item} />;
           })}
         </div>
       )}

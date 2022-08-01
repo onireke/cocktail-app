@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import Loading from "../../components/Loading";
+// import Loading from "../../components/Loading";
 import { useParams, Link, useSearchParams } from "react-router-dom";
 import "./OneCocktail.scss";
 
@@ -10,8 +10,10 @@ function OneCocktail() {
   const [cocktail, setCocktail] = useState(null);
   const [search] = useSearchParams();
   const drinkId = search.get("id");
+
+  console.log("id", drinkId);
+
   useEffect(() => {
-    // const id = idDrink;
     async function getCocktail() {
       setLoading(true);
       try {
@@ -19,7 +21,7 @@ function OneCocktail() {
           `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${drinkId}`
         );
         const data = await response.json();
-        console.log(data);
+        console.log("data:", data);
 
         if (data.drinks) {
           const {
@@ -66,9 +68,9 @@ function OneCocktail() {
     getCocktail();
   }, [drinkId]);
 
-  if (loading) {
-    return <Loading />;
-  }
+  // if (loading) {
+  //   return <Loading />;
+  // }
 
   if (!cocktail) {
     return <h3 className="no-cocktails">no cocktails to show</h3>;
@@ -76,15 +78,15 @@ function OneCocktail() {
     const { name, image, category, info, glass, instructions, ingredients } =
       cocktail;
     return (
-      <section>
+      <section className="one-cocktail">
         <Link to="/">
-          <button>back home</button>
+          <button className="home">back home</button>
         </Link>
         {loading ? (
           <img src="meme.gif" alt="" />
         ) : (
           <>
-            <h2>{name}</h2>
+            <h1 className="drink-name">{name}</h1>
             <div className="drink">
               <img src={image} alt={name} />
               <div className="information">

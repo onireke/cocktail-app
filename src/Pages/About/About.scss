@@ -2,10 +2,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  // background-image: url(../../images/about-background.jpeg);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  height: 100vh;
+  color: green;
+  // font-size: larger;
+
+  overflow-y: hidden;
 }
 .about-title {
   margin: 4rem auto;
   font-size: 2.3rem;
+  color: green;
+  text-align: center;
 }
 
 .about-message {
@@ -13,5 +23,9 @@
   width: 50%;
   line-height: 2rem;
   font-size: 1.2rem;
-  color: grey;
+}
+
+.try {
+  // backdrop-filter: blur(9px) saturate(100%);
+  // flex: 1;
 }
