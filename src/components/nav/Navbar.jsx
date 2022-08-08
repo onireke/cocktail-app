@@ -20,6 +20,8 @@ function Navbar() {
           </Link>
         </ul>
       </div>
+
+      <h2 className="qoyum">ertyui</h2>
     </nav>
   );
 }

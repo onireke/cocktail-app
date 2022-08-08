@@ -1,11 +1,10 @@
 import React from "react";
 import { useEffect, useState } from "react";
 // import Loading from "../../components/Loading";
-import { useParams, Link, useSearchParams } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import "./OneCocktail.scss";
 
 function OneCocktail() {
-  const { id } = useParams();
   const [loading, setLoading] = useState(false);
   const [cocktail, setCocktail] = useState(null);
   const [search] = useSearchParams();
