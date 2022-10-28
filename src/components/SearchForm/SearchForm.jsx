@@ -21,7 +21,7 @@ function SearchForm() {
     <main className="search-page">
       <form className="search" onSubmit={handleSubmit}>
         <div className="request-box">
-          <p className="search-request">Search Your Favourite Drink Here</p>
+          <p className="search-request">Search Your Coctail Here</p>
           <input
             type="text"
             className="home-input1"

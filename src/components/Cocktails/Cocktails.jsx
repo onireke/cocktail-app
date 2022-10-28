@@ -9,7 +9,6 @@ function Cocktails() {
   if (loading) {
     return <Loading />;
   }
-  console.log("hereeeee");
 
   if (cocktails.length < 1) {
     return (

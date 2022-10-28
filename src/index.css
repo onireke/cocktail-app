@@ -6,6 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: aliceblue;
+  background: url("../src/images/coctailimage.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 code {
